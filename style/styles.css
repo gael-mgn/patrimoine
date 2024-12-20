@@ -1,0 +1,320 @@
+        body {
+            margin: 0;
+            margin-top: 130px;
+            font-family: Arial, sans-serif;
+            font-family: 'Playfair Display', serif;
+            /*font-family: 'Lato', sans-serif;*/
+            background-color: #D8CCB3;
+        }
+        .container22 p, .button, .circular-progress, header nav {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: #32605A;
+    color: #D8CCB3;
+    border-bottom: 5px solid #D8CCB3;
+}
+header h1 {
+    padding: 20px;
+    padding-left: 0;
+    padding-bottom: 0px;
+}
+
+
+header a {
+    text-decoration: none;
+}
+header nav a {
+    font-size: 1.3em;
+        position: relative; /* Position relative pour placer le trait par rapport au lien */
+}
+
+header nav ul li {
+    padding-bottom: 20px;
+}
+
+header nav a::after, header nav a:hover::after {
+    content: ''; /* Ajoute un contenu pseudo-élément */
+    position: absolute; /* Position absolue par rapport au lien */
+    bottom: -5px; /* Place le trait juste en dessous du texte du lien */
+    left: 0; /* Alignement initial à gauche */
+    right: 0; /* Alignement final à droite */
+    /*margin: 0 auto; /* Centre horizontalement le trait */
+    width: 80%; /* Longueur du trait */
+    border-bottom: 3px solid; /* Épaisseur et style du trait (2px d'épaisseur, solide) */
+    transition: width 0.3s; /* Transition de la largeur du trait sur une durée de 0.3 seconde */
+    color: inherit;
+
+}
+header nav a::after{
+    width: 0px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    display: flex;
+    /*justify-content: center;*/
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-image: url('../img/Designer (1).jpeg'); /* Remplacez par l'URL de votre image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner-title {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+             header nav a {
+
+            font-size: 1.1em;
+        }
+            .banner-title {
+            font-size: 1.5em;
+        }
+       
+        }
+
+
+.last-study {
+    background: #C5B79C;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'empiler les éléments si nécessaire */
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.box {
+    flex: 1; /* Les divs prennent chacune 50% de la largeur */
+    width: 50%;
+    padding: 20px;
+    /*background-color: #f0f0f0;*/
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Empile les divs sur les écrans étroits */
+@media (max-width: 768px) {
+    .box {
+        flex-basis: 100%; /* Les divs prennent 100% de la largeur */
+    }
+}
+
+
+
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; /* Espacement entre les articles */
+    margin: 0 auto;
+}
+
+.article {
+    overflow: hidden;
+    /*background-color: #A39987;
+    border-radius: 12px;*/
+}
+/*.article p {
+    padding-left: 10px;
+    padding-right: 10px;
+}*/
+
+.enfant h2 {
+    padding-bottom: 5px;
+      text-align: center; 
+
+}
+.article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px; /* Ajoute des bords arrondis aux images */
+    transition: filter 0.3s ease; 
+}
+
+.article img:hover {
+    filter: grayscale(100%); /* Passe l'image en noir et blanc */
+}
+
+.article h3 {
+    font-size: 1.2em;
+    margin: 15px 0 10px;
+    color: #333;
+
+}
+
+.article p {
+    font-size: 0.9em;
+}
+
+
+    .diagram-container {
+        display: flex;
+        gap:25px;
+
+  justify-content: center; /* Optionnel : pour espacer les éléments */
+    }
+
+    .circular-progress {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      background: conic-gradient(var(--color, #4caf50) var(--progress, 0deg), var(--bgcolor, #e0e0e0) 0deg);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circular-progress::before {
+      content: '';
+      position: absolute;
+      width: 65px;
+      height: 65px;
+      background: #C5B79C;
+      border-radius: 50%;
+    }
+
+    .progress-value {
+      position: relative;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--color, #4caf50);
+    }
+
+
+
+
+.container22 {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+    /* Styles pour la div parent */
+.parent {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'empiler les éléments si nécessaire */
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 30px;
+    
+
+}
+
+/* Styles pour les div enfants */
+.enfant {
+    flex: 1; /* Chaque enfant occupe une moitié de la div parent */
+    height: 100%; /* Hauteur de l'enfant égale à la hauteur de la div parent */
+}
+.enfant h3 {
+    margin-top: 0;
+}
+
+
+/* Empile les divs sur les écrans étroits */
+@media (max-width: 768px) {
+    .container22 {
+    width: 90%
+}
+    .parent {
+        flex-direction: column; /* Change la disposition des éléments en colonne */
+        height: auto; /* Laissez la hauteur s'ajuster en fonction du contenu */
+    }
+
+    .enfant {
+        flex: none; /* Les divs ne prennent plus 50% de largeur, elles se contentent de la largeur de leur contenu */
+        width: 100%; /* Les divs prennent toute la largeur sur les petits écrans */
+    }
+}
+
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Espacement entre les étoiles */
+    margin: 10px 0;
+
+    transform: translateY(10px); /* Décalé vers le bas */
+    animation: fadeInUp 1.2s ease forwards; /* Animation des étoiles */
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.rating img {
+    width: 32px; /* Taille des étoiles */
+    height: auto;
+}
+
+.rate {
+    background-color: #C6B099;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    color: #680D1A;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+}
+a {
+    color: inherit;
+}
+.button {
+    text-decoration: none;
+    padding: 10px;
+    color: #D8CCB3;
+    background-color: #32605A;
+    border-radius: 12px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: #680D1A;
+}
