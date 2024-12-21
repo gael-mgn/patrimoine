@@ -9,6 +9,11 @@
         .container22 p, .button, .circular-progress, header nav {
     font-family: 'Lato', sans-serif;
 }
+@media (max-width: 768px) {
+body{
+    margin-top: 70px;
+}
+}
 
 header {
     z-index: 1000;
@@ -89,7 +94,11 @@ nav ul {
             margin: 0;
         }
         @media (max-width: 768px) {
+            .banner {
+            height: 130px;
+            }
              header nav a {
+            
 
             font-size: 1.1em;
         }
@@ -235,6 +244,14 @@ nav ul {
     gap: 30px;
     
 
+}
+.last-study .article {
+    background-color: #A3917F;
+    border-radius: 12px;
+}
+.last-study .article p {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Styles pour les div enfants */
