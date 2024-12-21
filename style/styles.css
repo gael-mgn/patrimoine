@@ -5,17 +5,26 @@
             font-family: 'Playfair Display', serif;
             /*font-family: 'Lato', sans-serif;*/
             background-color: #D8CCB3;
+
+            padding: 0;
+            bottom: 0;
+            gap: 0;
+            margin-bottom: 0;
+
+            scroll-behavior: smooth;
+
+            line-height: 1.4; /*espacement entre les lignes de texte*/
+
+            display: flex;
+            flex-direction: column;
         }
-        .container22 p, .button, .circular-progress, header nav {
+        .container22 p, .button, .circular-progress, header nav, footer {
     font-family: 'Lato', sans-serif;
 }
-@media (max-width: 768px) {
-body{
-    margin-top: 70px;
-}
-}
 
-
+footer h2, footer h3 {
+    font-family: 'Playfair Display', serif;
+} 
 
 .title {
     padding: 10px;
@@ -37,7 +46,6 @@ body{
 
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
     }
-
 
 
 header a {
@@ -280,20 +288,36 @@ nav ul {
 
 .article-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
     gap: 20px; /* Espacement entre les articles */
     margin: 0 auto;
 }
 
 .article {
     overflow: hidden;
-    /*background-color: #A39987;
-    border-radius: 12px;*/
+    background-color: #B7AD9A;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
-/*.article p {
+.article p, .article h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .article p, .article h3 {
     padding-left: 10px;
     padding-right: 10px;
-}*/
+}
+}
+
+
+
+
+
+
+
 
 .enfant h2 {
     padding-bottom: 5px;
@@ -366,6 +390,7 @@ nav ul {
     width: 80%;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 
@@ -379,17 +404,15 @@ nav ul {
     
 
 }
-.last-study .article {
-    background-color: #A3917F;
-    border-radius: 12px;
-}
+
 .last-study .article p {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Styles pour les div enfants */
 .enfant {
+    position: relative;
             background-color: inherit;
 
     flex: 1; /* Chaque enfant occupe une moitié de la div parent */
@@ -456,20 +479,26 @@ nav ul {
 }
 
 .rating img {
-    width: 20px;
-    height: auto;
-}
-
-
-.rating img {
     width: 32px; /* Taille des étoiles */
     height: auto;
 }
 
+.explain-rate {
+    justify-content: left;
+}
+.explain-rate img {
+    width: 64px;
+}
+@media (max-width: 768px) {
+.explain-rate h3 {
+    display: none;
+}
+}
+
 .rate {
     background-color: #C6B099;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 20px;
     border-radius: 12px;
     color: #680D1A;
@@ -497,6 +526,7 @@ a {
 
 
 
+
 .banner2 {
       position: relative;
       width: 100%;
@@ -506,11 +536,6 @@ a {
 
     .banner2 img {
       position: absolute;
-/*      min-height: 125vh;
-      height: auto;
-       width: auto;*/ 
-       /*width: 100%;
-      height: 100%;*/
       min-height: 120vh;
       object-fit: cover;
       object-position: center;
@@ -518,14 +543,12 @@ a {
       top: 0;
       left: 0;
       transform: translateY(0);
-      background-color: red;
       /*transition: transform 0.1s ease-out;*/
     }
 @media (max-width: 768px) {
 
   .banner2 {
     height: 50vh;
-    background-color: red;
   }
   .banner2 img {
 
@@ -546,3 +569,155 @@ position: absolute;
 
 
 }
+
+section {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    padding: 20px;
+    background-color: #C6B099;
+}
+section h2 {
+    color: #680D1A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    color: #D8CCB3;
+    padding: 30px 0;
+    padding-top: 0px;
+    z-index: 10;
+    font-size: 14px;
+    overflow: hidden;
+    background-color: #32605A;
+    /*max-width: 1100px;*/
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  
+  .footer-content {
+    width: 90%;
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+}
+
+.footer-section {
+    flex: 1;
+    /*margin: 2.5vw;*/
+    margin-left: 0px;
+}
+.footer-section p {
+    padding: 0;
+    margin: 0;
+}
+.footer-section h3 {
+    font-weight: bold;
+}
+
+
+.footer-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-section li {
+    padding-top: 5px;
+}
+.footer-section a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #C6B099;
+}
+.footer-section h3 {
+    font-size: 16px;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    text-align: left;
+    padding: 10px 0;
+margin-bottom: 0px;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.footer-bottom::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 1px;
+    background-color: #C6B099;
+}
+@media{
+    .footer-bottom {
+    top: 15px;
+}
+
+
+
+
+
+}
+.footer-bottom .text-container{
+    margin-top: 20px;
+}
+.license-link {
+    color: inherit;           /* Garde la même couleur que le texte du paragraphe */
+    text-decoration: underline; /* Ajoute un soulignement */
+    font-size: inherit;       /* Conserve la même taille que le texte du paragraphe */
+    font-weight: inherit;     /* Conserve le même poids (gras, normal) que le paragraphe */
+}
+
+
+
+.subscription-container {
+    width: 100%;
+    background-color: rgb(245, 245, 254);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(22, 22, 22);
+}
+
+
+
+
+
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+
+    .footer-section, .footer-bottom{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+
+
+
