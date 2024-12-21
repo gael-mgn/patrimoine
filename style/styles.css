@@ -17,11 +17,9 @@ body{
 
 
 
-
-
-
 .title {
     padding: 10px;
+    padding-left: 0;
 }
     header {
         z-index: 1000;
@@ -32,62 +30,129 @@ body{
       top: 0px;
       position: fixed;
       width: 100%;
+      margin: 0;
           background-color: #32605A;
     color: #D8CCB3;
     border-bottom: 5px solid #D8CCB3;
     }
 
-    h1 {
-      margin: 0;
-    }
+
+
+header a {
+    text-decoration: none;
+}
+
+header nav a {
+    font-size: 1.3em;
+        position: relative; /* Position relative pour placer le trait par rapport au lien */
+}
+header nav a::after, header nav a:hover::after {
+    content: ''; /* Ajoute un contenu pseudo-élément */
+    position: absolute; /* Position absolue par rapport au lien */
+    bottom: -5px; /* Place le trait juste en dessous du texte du lien */
+    left: 0; /* Alignement initial à gauche */
+    right: 0; /* Alignement final à droite */
+    /*margin: 0 auto; /* Centre horizontalement le trait */
+    width: 80%; /* Longueur du trait */
+    border-bottom: 3px solid; /* Épaisseur et style du trait (2px d'épaisseur, solide) */
+    transition: width 0.3s; /* Transition de la largeur du trait sur une durée de 0.3 seconde */
+    color: inherit;
+
+}
+header nav a::after{
+    width: 0px;
+}
+
+
+.main-menu {
+    padding-left: 0;
+    margin-left: 0;
+    left: 0px;
+}
 
     .main-menu ul {
-      display: flex;
       list-style: none;
-      padding: 0;
-      margin: 10px 0 0 0;
+    margin: 1rem 0 0;
+    padding: 0;
+    display: flex;
+    /*justify-content: center;*/
+    gap: 2rem;
     }
 
     .main-menu ul li {
-      margin: 0 10px;
+/*      margin: 0 10px;
       padding: 10px;
       padding-top: 0;
+                  padding-left: 0px;
+            background-color: red;
+*/
     }
 
     .main-menu ul li a {
       color: #D8CCB3;
       text-decoration: none;
+            font-size: 1.3em;
+
     }
 
-    .hamburger {
+header nav ul li {
+    padding-bottom: 20px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    display: flex;
+    /*justify-content: center;*/
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .menu-icon {
       display: none;
-      flex-direction: column;
-      cursor: pointer;
     }
 
-    .hamburger div {
-      width: 25px;
-      height: 3px;
-      background-color: #D8CCB3;
-      margin: 3px 0;
+    .menu-icon {
+      font-size: 36px;
+        color: #D8CCB3;
     }
 
     @media (max-width: 768px) {
       header {
-        flex-direction: column;
 
       }
 
+
+
        .title{
-        width: 90%;
+        width: 100%;
         margin: auto;
         display: flex;
         align-items: center; 
         gap: 30px;
-        /*background-color: red;*/
+
+
       }
 
-      .hamburger {
+      .menu-icon {
         display: flex;
       }
 
@@ -102,7 +167,7 @@ body{
         height:0px;
         overflow:hidden;
         transition: height 0.5s ease-in-out;*/
-
+        border-top: 4px solid #2B514C;
       }
 
 
@@ -110,20 +175,30 @@ body{
         flex-direction: column;
         width: 100%;
         /*padding: 10px 0;*/
+        gap: 0px;
+        margin-top:0;
+
+
       }
 
       .main-menu ul li {
+        margin-top:0;
         /*margin: 0;
         padding: 10px 0;*/
         padding: 10px;
+        font-size: 0.9em;
         text-align: center;
-        border-bottom: 1px solid #555;
+        border-bottom: 1px solid #D8CCB3;
       }
 
       .main-menu ul li:last-child {
         border-bottom: none;
       }
     }
+
+
+
+
 
 
 
@@ -151,18 +226,19 @@ body{
         .banner-title {
             font-size: 2.5em;
             margin: 0;
+            padding-top: 10px;
+
         }
         @media (max-width: 768px) {
             .banner {
-            height: 130px;
+            height: 50vh;
             }
              header nav a {
-            
 
             font-size: 1.1em;
         }
             .banner-title {
-            font-size: 1em;
+            font-size: 1.2em;
         }
        
         }

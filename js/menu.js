@@ -26,19 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
             if (lastScrollPosition - scrollPosition > 10) {
                 header.style.top = `0px`;
             }
-            else if (lastScrollPosition - scrollPosition < -1){
+            else if (lastScrollPosition - scrollPosition < -2){
                  console.log("eeeee");
                  if (loaded){
-                    header.style.top = `${-header.offsetHeight - menu.offsetHeight}px`;
+                    if (!menuOpened){
+                        header.style.top = `${-header.offsetHeight - menu.offsetHeight}px`;
+                    }
                  }
                  else {
                     loaded = true;
                  }
-
-                if (menuOpened){
-                    menuOpened = false;
-                    menu.style.display = "none";
-                }
             }
         }
         else {
