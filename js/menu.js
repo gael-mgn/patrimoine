@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 header.style.top = `0px`;
             }
             else if (lastScrollPosition - scrollPosition < -2){
-                 console.log("eeeee");
                  if (loaded){
                     if (!menuOpened){
                         header.style.top = `${-header.offsetHeight - menu.offsetHeight}px`;
@@ -75,8 +74,9 @@ function toggleMenu() {
   }
   else {
     menu.style.display="none";
-    menuOpened = false;
   }
+
+  menuOpened = false;
   
   var headerHeight = document.querySelector('header').offsetHeight;
   document.body.style.marginTop = headerHeight + 'px';
