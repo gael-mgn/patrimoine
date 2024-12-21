@@ -202,7 +202,7 @@ nav ul {
       position: relative;
       width: 120px;
       height: 120px;
-      background: conic-gradient(var(--color, #4caf50) var(--progress, 0deg), var(--bgcolor, #e0e0e0) 0deg);
+      background: conic-gradient(var(--color, #4caf50) var(--progress, 0deg), var(--bgcolor, inherit) 0deg);
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -222,7 +222,7 @@ nav ul {
       position: relative;
       font-size: 18px;
       font-weight: bold;
-      color: var(--color, #4caf50);
+      color: var(--color, inherit);
     }
 
 
@@ -280,18 +280,19 @@ nav ul {
     }
 }
 
-
+/*
 .rating {
     display: flex;
     justify-content: center;
-    gap: 5px; /* Espacement entre les étoiles */
+    gap: 5px;
     margin: 10px 0;
 
-    transform: translateY(10px); /* Décalé vers le bas */
-    animation: fadeInUp 1.2s ease forwards; /* Animation des étoiles */
-}
+    transform: translateY(10px);
+    animation: fadeInUp 1.2s ease forwards;
+}*/
 
 /* Animation */
+/*
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -301,6 +302,26 @@ nav ul {
         opacity: 1;
         transform: translateY(0);
     }
+}*/
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+    opacity: 0; /* Cache initialement les étoiles */
+    transform: translateY(10px); /* Décalé vers le bas */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition fluide */
+}
+
+.rating.show { /* Classe ajoutée par JavaScript */
+    opacity: 1; /* Rend visible */
+    transform: translateY(0); /* Ramène en position */
+}
+
+.rating img {
+    width: 20px;
+    height: auto;
 }
 
 

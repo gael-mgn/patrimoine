@@ -6,12 +6,12 @@
 
 
     <meta name="robots" content="noindex, nofollow">
-    
 
 
 
 
-    
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide du patrimoine en Péril</title>
@@ -178,13 +178,14 @@
 
   <script>
 
+    const duration = 800; // Durée totale en millisecondes
 
     // Fonction d'interpolation Ease-In-Out
     function easeInOut(t) {
       return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
     }
 
-    function animateCircularProgress(element, value, color, bgColor, duration) {
+    function animateCircularProgress(element, value, color, bgColor) {
       const startTime = performance.now();
       const targetProgress = value / 100; // Progression cible en pourcentage (normalisé 0-1)
       const progressValue = element.querySelector('.progress-value');
@@ -224,13 +225,28 @@
         const value = parseFloat(element.dataset.value) || 0; // Valeur par défaut : 0
         const color = element.dataset.color || '#4caf50'; // Couleur par défaut : vert
         const bgColor = element.dataset.bgcolor || '#e0e0e0'; // Couleur de fond par défaut : gris clair
-        const duration = 800; // Durée de l'animation en ms
 
         // Ajouter l'élément de valeur
         element.innerHTML = `<div class="progress-value">0%</div>`;
+        element.style.setProperty('--bgcolor', bgColor);
 
-        // Lancer l'animation
-        animateCircularProgress(element, value, color, bgColor, duration);
+        // Détecter l'apparition à l'écran
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Lancer l'animation lors de la première apparition
+              element.classList.add('visible');
+              animateCircularProgress(element, value, color, bgColor);
+
+              // Déconnecter l'observateur pour ne pas réanimer
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.6 // Détecte lorsque 60% de l'élément est visible
+        });
+
+        observer.observe(element);
       });
     }
 
