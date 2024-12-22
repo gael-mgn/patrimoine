@@ -20,6 +20,12 @@
     font-family: 'Lato', sans-serif;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 1.1em;
+    }
+}
+
 footer h2, footer h3 {
     font-family: 'Playfair Display', serif;
 } 
@@ -306,8 +312,8 @@ nav ul {
 
 @media (max-width: 768px) {
     .article p, .article h3 {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 5px;
 }
 }
