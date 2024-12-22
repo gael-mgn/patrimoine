@@ -1,6 +1,7 @@
 
 let menuOpened = false;
 let loaded = false;
+let menusss = false;
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -18,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const windowHeight = window.innerHeight;
     let lastScrollPosition = window.scrollY;
 
+
+    
 
     function updateActiveSection() {
         const scrollPosition = window.scrollY;
@@ -62,10 +65,20 @@ function toggleMenu() {
         menuOpened = true;
         menu.style.display = "flex";
     }
+    menusss = true;
 
 
 }
-
+function closeMenu() {
+        if (!menusss){
+            if (window.innerWidth <= 768){
+                console.log('close');
+            toggleMenu();
+            }
+        }else {
+            menusss = false;
+        }
+    }
 
     function updateMarginTop() {
 
@@ -88,3 +101,5 @@ window.addEventListener('load', updateMarginTop);
 
 // Mise à jour lors du redimensionnement de la fenêtre
 window.addEventListener('resize', updateMarginTop);
+
+document.addEventListener('click', closeMenu);
