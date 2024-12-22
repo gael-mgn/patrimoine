@@ -1,53 +1,7 @@
-.banner {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-
-.banner img {
-    position: absolute;
-    min-height: 120vh;
-    object-fit: cover;
-    object-position: center;
-    top: 0;
-    left: 0;
-    transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-    .banner {
-        height: 50vh;
-    }
-
-    .banner img {
-        position: absolute;
-        min-height: 120vh;
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: 0;
-        transform: translateY(0);
-        background-color: red;
-        height: 120vh;
-        object-fit: cover;
-    }
-}
 
 
-.enfant h2 {
-    padding-bottom: 5px;
-    text-align: center;
-}
-.enfant .more {
-    display: block;
-    margin-top: 30px;
-    text-align: center;
-    font-size: 1.1em;
-}
-.enfant .more:hover {
-    color: #680D1A;
-}
+
+
 
 
 .last-study {
@@ -65,40 +19,7 @@
 }
 
 
-.parent {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 20px;
-    gap: 35px;
-}
 
-.enfant {
-    position: relative;
-    background-color: inherit;
-    flex: 1;
-    height: 100%;
-}
-
-.enfant h3 {
-    margin-top: 0;
-}
-
-@media (max-width: 768px) {
-    .container {
-    width: 90%
-    }
-
-    .parent {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .enfant {
-        flex: none;
-        width: 100%;
-    }
-}
 
 .rating
 {
@@ -172,9 +93,7 @@
     background-color: #C5B79C;
 }
 
-#contact-us, #contact-us h2 {
-    color: #294F4A;
-}
+
 
 #about-us {
     background-color: #32605A;
@@ -276,68 +195,3 @@
 
 
 
-/* Styliser le formulaire */
-
-form {
-    width: 90%;
-    padding: 20px;
-    background: #32605A;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-    form {
-        width: 89%;
-        margin: auto;
-    }
-}
-
-/* Styliser les étiquettes */
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #D8CCB3;
-}
-
-/* Styliser les champs de texte */
-input[type="email"],textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    /* Inclure padding et bordure dans la largeur */
-    background-color: #D8CCB3;
-}
-
-/* Styliser la zone de texte */
-textarea {
-    resize: none;
-    /* Permettre la redimension verticale seulement */
-    min-height: 100px;
-    background-color: #D8CCB3;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 12px;
-    font-family: inherit;
-    background-color: transparent;
-    color: #D8CCB3;
-    font-size: 16px;
-    cursor: pointer;
-    border: 3px solid #D8CCB3;
-    transition: background-color 0.3s ease;
-}
-
-input:focus,textarea:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}

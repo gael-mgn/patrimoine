@@ -24,12 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateActiveSection() {
         const scrollPosition = window.scrollY;
-       
         if (scrollPosition > windowHeight/2) {
             if (lastScrollPosition - scrollPosition > 10) {
                 header.style.top = `0px`;
             }
             else if (lastScrollPosition - scrollPosition < -2){
+                if (!menuOpened){
+                        header.style.top = `${-header.offsetHeight - menu.offsetHeight}px`;
+                    }
                  if (loaded){
                     if (!menuOpened){
                         header.style.top = `${-header.offsetHeight - menu.offsetHeight}px`;
@@ -69,16 +71,7 @@ function toggleMenu() {
 
 
 }
-function closeMenu() {
-        if (!menusss){
-            if (window.innerWidth <= 768){
-                console.log('close');
-            toggleMenu();
-            }
-        }else {
-            menusss = false;
-        }
-    }
+
 
     function updateMarginTop() {
 
@@ -102,4 +95,3 @@ window.addEventListener('load', updateMarginTop);
 // Mise à jour lors du redimensionnement de la fenêtre
 window.addEventListener('resize', updateMarginTop);
 
-document.addEventListener('click', closeMenu);
