@@ -100,3 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Applique l'observateur à chaque élément avec la classe .rating
     ratings.forEach(rating => observer.observe(rating));
 });
+
+window.addEventListener('scroll', function () {
+      const img = document.querySelector('.banner img');
+      let scrollPosition = window.scrollY;
+      img.style.transform = 'translateY(-' + scrollPosition * 0.15 + 'px)';
+    });

@@ -1,276 +1,53 @@
-        body {
-            margin: 0;
-            margin-top: 130px;
-            font-family: 'Playfair Display', serif;
-            background-color: #D8CCB3;
-            font-size: 1em;
-            padding: 0;
-            bottom: 0;
-            gap: 0;
-            margin-bottom: 0;
-            color: #441B00;
-            scroll-behavior: smooth;
-
-            line-height: 1.4; /*espacement entre les lignes de texte*/
-
-            display: flex;
-            flex-direction: column;
-        }
-        .container22 p, .button, .circular-progress, header nav, footer {
-    font-family: 'Lato', sans-serif;
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
 }
 
-h2 {
-    font-size: 1.8em;
+.banner img {
+    position: absolute;
+    min-height: 120vh;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
 }
-
-
-.no-style {
-    list-style-type: none; /* Supprime les puces */
-    padding: 0;            /* Supprime l'indentation */
-    margin: 0;             /* Supprime les marges par défaut */
-  }
-
-  .no-style li {
-    margin-bottom: 10px;   /* Ajoute un espacement plus important entre les éléments */
-  }
-
-
 
 @media (max-width: 768px) {
-    body {
-        font-size: 1.1em;
-    }
-    h2 {
-    font-size: 1.6em;
-}
-}
-
-footer h2, footer h3 {
-    font-family: 'Playfair Display', serif;
-} 
-
-.title {
-    padding: 10px;
-    padding-left: 0;
-}
-    header {
-        z-index: 1000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: top 0.5s;
-      top: 0px;
-      position: fixed;
-      width: 100%;
-      margin: 0;
-          background-color: #32605A;
-    color: #D8CCB3;
-    border-bottom: 5px solid #D8CCB3;
-
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    .banner {
+        height: 50vh;
     }
 
-
-header a {
-    text-decoration: none;
-}
-
-header nav a {
-    font-size: 1.3em;
-        position: relative; /* Position relative pour placer le trait par rapport au lien */
-}
-header nav a::after, header nav a:hover::after {
-    content: ''; /* Ajoute un contenu pseudo-élément */
-    position: absolute; /* Position absolue par rapport au lien */
-    bottom: -5px; /* Place le trait juste en dessous du texte du lien */
-    left: 0; /* Alignement initial à gauche */
-    right: 0; /* Alignement final à droite */
-    /*margin: 0 auto; /* Centre horizontalement le trait */
-    width: 80%; /* Longueur du trait */
-    border-bottom: 3px solid; /* Épaisseur et style du trait (2px d'épaisseur, solide) */
-    transition: width 0.3s; /* Transition de la largeur du trait sur une durée de 0.3 seconde */
-    color: inherit;
-
-}
-header nav a::after{
-    width: 0px;
-}
-
-
-.main-menu {
-    padding-left: 0;
-    margin-left: 0;
-    left: 0px;
-}
-
-    .main-menu ul {
-      list-style: none;
-    margin: 1rem 0 0;
-    padding: 0;
-    margin-top: 5px;
-    display: flex;
-    /*justify-content: center;*/
-    gap: 2rem;
-    }
-
-    .main-menu ul li {
-/*      margin: 0 10px;
-      padding: 10px;
-      padding-top: 0;
-                  padding-left: 0px;
-            background-color: red;
-*/
-    }
-
-    .main-menu ul li a {
-      color: #D8CCB3;
-      text-decoration: none;
-            font-size: 1.3em;
-
-    }
-
-header nav ul li {
-    padding-bottom: 10px;
-}
-
-
-
-nav ul {
-    list-style: none;
-    margin: 1rem 0 0;
-    padding: 0;
-    display: flex;
-    /*justify-content: center;*/
-    gap: 2rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .menu-icon {
-      display: none;
-    }
-
-    .menu-icon {
-      font-size: 36px;
-        color: #D8CCB3;
-    }
-
-    @media (max-width: 768px) {
-
-
-       .title{
+    .banner img {
+        position: absolute;
+        min-height: 120vh;
         width: 100%;
-        margin: auto;
-        display: flex;
-        align-items: center; 
-        gap: 30px;
-
-
-      }
-
-      .menu-icon {
-        display: flex;
-      }
-
-      .main-menu {
-        display: none;
-        width: 100%;
-        /*
-        flex-direction: column;
-        background-color: #333;
-        width: 100%;
-        
-        height:0px;
-        overflow:hidden;
-        transition: height 0.5s ease-in-out;*/
-        border-top: 4px solid #2B514C;
-      }
-
-
-      .main-menu ul {
-        flex-direction: column;
-        width: 100%;
-        /*padding: 10px 0;*/
-        gap: 0px;
-        margin-top:0;
-      }
-
-      .main-menu ul li {
-        margin-top:0;
-        /*margin: 0;
-        padding: 10px 0;*/
-        padding: 10px;
-        font-size: 0.9em;
-        text-align: center;
-        border-bottom: 1px solid #D8CCB3;
-      }
-
-      .main-menu ul li:last-child {
-        border-bottom: none;
-      }
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+        background-color: red;
+        height: 120vh;
+        object-fit: cover;
     }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        .banner {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            background-image: url('../img/Designer (1).jpeg'); /* Remplacez par l'URL de votre image */
-            background-size: cover;
-            background-position: center;
-        }
-
-        .banner-title {
-            font-size: 2.5em;
-            margin: 0;
-            padding-top: 0;
-
-        }
-        @media (max-width: 768px) {
-            .banner {
-            height: 50vh;
-            }
-             header nav a {
-
-            font-size: 1.1em;
-        }
-            .banner-title {
-            font-size: 1.2em;
-        }
-       
-        }
+.enfant h2 {
+    padding-bottom: 5px;
+    text-align: center;
+}
+.enfant .more {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.1em;
+}
+.enfant .more:hover {
+    color: #680D1A;
+}
 
 
 .last-study {
@@ -280,259 +57,102 @@ nav ul {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-.container {
-    display: flex;
-    flex-wrap: wrap; /* Permet d'empiler les éléments si nécessaire */
-    margin: 0 auto;
-    margin-top: 20px;
-    gap: 20px;
-    width: 100%;
-    max-width: 1400px;
-}
-
-.box {
-    flex: 1; /* Les divs prennent chacune 50% de la largeur */
-    width: 50%;
-    padding: 20px;
-    /*background-color: #f0f0f0;*/
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Empile les divs sur les écrans étroits */
-@media (max-width: 768px) {
-    .box {
-        flex-basis: 100%; /* Les divs prennent 100% de la largeur */
-    }
-}
-
-
-
-
 .article-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
-    gap: 25px; /* Espacement entre les articles */
+    gap: 25px;
     margin: 0 auto;
 }
 
-.article {
-    overflow: hidden;
-    background-color: #B7AD9A;
-    border-radius: 12px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-}
-.article p, .article h3 {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-@media (max-width: 768px) {
-    .article p, .article h3 {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-}
-}
-
-
-
-
-
-
-
-
-.enfant h2{
-    padding-bottom: 5px;
-      text-align: center; 
-
-}
-.enfant .more {
-    display: block;
-    margin-top: 30px;  
-    text-align: center; 
-    font-size: 1.1em;
-}
-.enfant .more:hover {
-    color: #680D1A;
-}
-
-
-.article img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 6px; /* Ajoute des bords arrondis aux images */
-    transition: filter 0.3s ease; 
-}
-
-.article img:hover {
-    filter: grayscale(100%); /* Passe l'image en noir et blanc */
-}
-
-.article h3 {
-    font-size: 1.2em;
-    margin: 15px 0 10px;
-    color: #333;
-
-}
-
-
-
-    .diagram-container {
-        display: flex;
-        gap:25px;
-        background-color: inherit;
-
-  justify-content: center; /* Optionnel : pour espacer les éléments */
-    }
-
-    .circular-progress {
-      position: relative;
-      width: 120px;
-      height: 120px;
-      background: conic-gradient(var(--color, #4caf50) var(--progress, 0deg), var(--bgcolor, inherit) 0deg);
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .circular-progress::before {
-      content: '';
-      position: absolute;
-      width: 65px;
-      height: 65px;
-      background: #C5B79C;
-      border-radius: 50%;
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .progress-value {
-      position: relative;
-      font-size: 18px;
-      font-weight: bold;
-      color: var(--color, inherit);
-    }
-
-
-
-
-.container22 {
-    width: 80%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-
-    /* Styles pour la div parent */
 .parent {
     display: flex;
-    flex-wrap: wrap; /* Permet d'empiler les éléments si nécessaire */
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 20px;
     gap: 35px;
 }
 
-.last-study .article p {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Styles pour les div enfants */
 .enfant {
     position: relative;
-            background-color: inherit;
-
-    flex: 1; /* Chaque enfant occupe une moitié de la div parent */
-    height: 100%; /* Hauteur de l'enfant égale à la hauteur de la div parent */
+    background-color: inherit;
+    flex: 1;
+    height: 100%;
 }
+
 .enfant h3 {
     margin-top: 0;
 }
 
-
-/* Empile les divs sur les écrans étroits */
 @media (max-width: 768px) {
-    .container22 {
+    .container {
     width: 90%
-}
+    }
+
     .parent {
-        flex-direction: column; /* Change la disposition des éléments en colonne */
-        height: auto; /* Laissez la hauteur s'ajuster en fonction du contenu */
+        flex-direction: column;
+        height: auto;
     }
 
     .enfant {
-        flex: none; /* Les divs ne prennent plus 50% de largeur, elles se contentent de la largeur de leur contenu */
-        width: 100%; /* Les divs prennent toute la largeur sur les petits écrans */
+        flex: none;
+        width: 100%;
     }
 }
 
-/*
-.rating {
+.rating
+{
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin: 10px 0;
-
+    opacity: 0;
+    /* Cache initialement les étoiles */
     transform: translateY(10px);
-    animation: fadeInUp 1.2s ease forwards;
-}*/
-
-/* Animation */
-/*
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}*/
-
-.rating {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    opacity: 0; /* Cache initialement les étoiles */
-    transform: translateY(10px); /* Décalé vers le bas */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition fluide */
+    /* Décalé vers le bas */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    /* Transition fluide */
 }
 
-.rating.show { /* Classe ajoutée par JavaScript */
-    opacity: 1; /* Rend visible */
-    transform: translateY(0); /* Ramène en position */
+.rating.show
+{
+    /* Classe ajoutée par JavaScript */
+    opacity: 1;
+    /* Rend visible */
+    transform: translateY(0);
+    /* Ramène en position */
 }
 
-.rating img {
-    width: 32px; /* Taille des étoiles */
+.rating img
+{
+    width: 32px;
+    /* Taille des étoiles */
     height: auto;
 }
-@media (max-width: 768px) {
-    .rating img {
-    width: 45px;
-     height: 45px;
-}
+
+@media (max-width: 768px)
+{
+    .rating img
+    {
+        width: 45px;
+        height: 45px;
+    }
 }
 
-.explain-rate {
+.explain-rate
+{
     justify-content: left;
 }
-.explain-rate img {
+
+.explain-rate img
+{
     width: 64px;
     height: 64px;
 }
-@media (max-width: 768px) {
-.explain-rate h3 {
-    display: none;
-}
+
+@media (max-width: 768px){
+    .explain-rate h3{
+        display: none;
+    }
 }
 
 .rate {
@@ -544,236 +164,70 @@ nav ul {
     font-weight: bold;
     text-align: center;
     font-size: 1.1em;
-     padding-bottom: 25px;
+    padding-bottom: 25px;
 }
 
-.about-rating {
+#about-rating
+{
     background-color: #C5B79C;
 }
 
-
-a {
-    color: inherit;
+#contact-us, #contact-us h2 {
+    color: #294F4A;
 }
-.button {
-    text-decoration: none;
-    padding: 10px;
-    color: #D8CCB3;
+
+#about-us {
     background-color: #32605A;
-    border-radius: 12px;
-    font-size: 0.9em;
-    transition: background-color 0.3s ease;
-}
-.button:hover{
-    background-color: #680D1A;
 }
 
-
-
-
-
-
-.banner2 {
-      position: relative;
-      width: 100%;
-      height: 400px;
-      overflow: hidden;
-    }
-
-    .banner2 img {
-      position: absolute;
-      min-height: 120vh;
-      object-fit: cover;
-      object-position: center;
-
-      top: 0;
-      left: 0;
-      transform: translateY(0);
-      /*transition: transform 0.1s ease-out;*/
-    }
-@media (max-width: 768px) {
-
-  .banner2 {
-    height: 50vh;
-  }
-  .banner2 img {
-
-position: absolute;
-      min-height: 120vh;
-      width: 100%;
-      height: auto;
-      top: 0;
-      left: 0;
-      transform: translateY(0);
-      background-color: red;
-      /*transition: transform 0.1s ease-out;*/
-
-
-    height: 120vh;
-    object-fit: cover;
-  }
-
-
-}
-
-/*.section2 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: 0;
-    padding: 20px;
-}*/
-section h2 {
-    color: #680D1A;
-            margin-bottom: 30px;
-
-}
-section {
-    padding-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
+#about-us, #about-us h2 {
     color: #D8CCB3;
-    padding: 30px 0;
-    padding-top: 0px;
-    z-index: 10;
-    overflow: hidden;
-    background-color: #32605A;
-    /*max-width: 1100px;*/
 }
-.footer-content {
+
+
+
+
+
+
+
+
+/* Diagrammes */
+
+.diagram-container {
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    max-width: 1400px;
-    margin: auto;
-    justify-content: space-around;
-    padding-top: 20px;
-}
-@media screen and (max-width: 768px) {
-  
-  .footer-content {
-    width: 90%;
-    display: block;
-    margin-bottom: 30px;
-    padding-top: 20px;
-  }
+    gap:25px;
+    background-color: inherit;
+    justify-content: center;
 }
 
-.footer-section {
-    flex: 1;
-    /*margin: 2.5vw;*/
-    margin-left: 0px;
-}
-.footer-section p {
-    padding: 0;
-    margin: 0;
-}
-.footer-section h3 {
-    font-weight: bold;
-}
-
-
-.footer-section ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.footer-section li {
-    padding-top: 5px;
-}
-.footer-section a {
-    text-decoration: none;
-    color: #C6B099;
-}
-.footer-section h3 {
-}
-.footer-section a:hover {
-    text-decoration: underline;
-}
-.footer-bottom {
-    text-align: left;
-    padding: 10px 0;
-margin-bottom: 0px;
+.circular-progress {
     position: relative;
-    width: 100%;
-    margin-top: 30px;
-    font-size: 0.9em;
+    width: 120px;
+    height: 120px;
+    background: conic-gradient(var(--color, #4caf50) var(--progress, 0deg), var(--bgcolor, inherit) 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width: 768px) {
-    .footer-bottom {
-    font-size: 0.8em;
-}
-}
-.footer-bottom::after {
+
+.circular-progress::before {
     content: '';
     position: absolute;
-    width: 100%;
-    top: 0px;
-    height: 1px;
-    background-color: #C6B099;
-}
-@media{
-    .footer-bottom {
-    top: 15px;
+    width: 65px;
+    height: 65px;
+    background: #C5B79C;
+    border-radius: 50%;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
-
+.progress-value {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color, inherit);
 }
-.footer-bottom .text-container{
-    margin-top: 20px;
-}
-.license-link {
-    color: inherit;           /* Garde la même couleur que le texte du paragraphe */
-    text-decoration: underline; /* Ajoute un soulignement */
-    font-size: inherit;       /* Conserve la même taille que le texte du paragraphe */
-    font-weight: inherit;     /* Conserve le même poids (gras, normal) que le paragraphe */
-}
-
-
-
-.subscription-container {
-    width: 100%;
-    background-color: rgb(245, 245, 254);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: rgb(22, 22, 22);
-}
-
-
-
-
-
-
-/* Styles pour les petits écrans */
-@media (max-width: 768px) {
-
-    .footer-section, .footer-bottom{
-        width: 90%;
-        margin: auto;
-    }
-}
-
-
-
-
-
 
 
 
@@ -782,85 +236,65 @@ margin-bottom: 0px;
 
 
 /* Styliser le formulaire */
+
 form {
-  width: 90%;
-  padding: 20px;
-  background: #32605A;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    padding: 20px;
+    background: #32605A;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 @media (max-width: 768px) {
     form {
-width: 88%;
-  margin: auto;
-}
+        width: 89%;
+        margin: auto;
+    }
 }
 
 /* Styliser les étiquettes */
 label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #D8CCB3;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #D8CCB3;
 }
 
 /* Styliser les champs de texte */
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box; /* Inclure padding et bordure dans la largeur */
-  background-color: #D8CCB3;
+input[type="email"],textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Inclure padding et bordure dans la largeur */
+    background-color: #D8CCB3;
 }
 
 /* Styliser la zone de texte */
 textarea {
-  resize: none; /* Permettre la redimension verticale seulement */
-  min-height: 100px;
-  background-color: #D8CCB3;
+    resize: none;
+    /* Permettre la redimension verticale seulement */
+    min-height: 100px;
+    background-color: #D8CCB3;
 }
 
-/* Styliser le bouton */
 button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #680D1A;
-  color: #D8CCB3;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-
-
-/* Ajout d'un focus sur les champs */
-input:focus,
-textarea:focus {
-  border-color: #007BFF;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.content {
-    font-size: 1.2em;
-}
-
-
-.contact-us {
-}
-.contact-us, .contact-us h2 {
-    color: #294F4A;
-}
-.about-us {
-    background-color: #32605A;
-}
-
-.about-us, .about-us h2 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #680D1A;
     color: #D8CCB3;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input:focus,textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }

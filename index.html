@@ -1,63 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-
-
+    <!-- A RETIRER LORS DE LA PUBLICATION ! -->
     <meta name="robots" content="noindex, nofollow">
-
-
-
-
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide du patrimoine en Péril</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet">
     <link href="style/styles.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo.png"/>
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
-
-    <script>
-    window.addEventListener('scroll', function () {
-      const img = document.querySelector('.banner2 img');
-      let scrollPosition = window.scrollY;
-      img.style.transform = 'translateY(-' + scrollPosition * 0.15 + 'px)';
-    });
-  </script>
 </head>
 <body>
     <header id="main-header">
-        <div class="container22">
-
+        <div class="container">
             <div class="title">
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
             <h1 class="banner-title"><a href="#">Guide du Patrimoine en Péril</a></h1>
-            </div>
+        </div>
     
-    <nav id="menu" class="main-menu">
-      <ul>
-        <li><a href="#">Accueil</a></li>
-                    <li><a href="articles/parcours.html">Articles</a></li>
-                    <li><a href="#projects">A propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+        <nav id="menu" class="main-menu">
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="">Fiches monuments</a></li>
+            <li><a href="">Témoignages</a></li>
+            <li><a href="#about-us">A propos</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+        </ul>
+        </nav>
         </div>
     </header>
 
-<div class="banner2">
-    <img src="img/Designer (1).jpeg" alt="Bannière" />
-  </div>
+    <div class="banner">
+        <img src="img/Designer (1).jpeg" alt="Bannière" />
+    </div>
 
-    <!--<div class="banner"></div>-->
 
-<section>
-            <div class="container22">
+    <section>
+            <div class="container">
                 <div class="parent">
         <div class="enfant">
             <h2>Dernière étude de cas - Toulouse</h2>
@@ -102,21 +86,16 @@
 
                          <div class="article-grid">
 
-        <div class="article">
-            <a href="article1.html">
-                <img src="img/article2.png" alt="Image 2">
-            </a>
+        <a href="article1.html" class="article">
+            <img src="img/article2.png" class="article-image" alt="Image 2">
             <h3>Jean - Habitant de Toulouse</h3>
             <p>Insérer une courte description de cette personne.</p>
-        </div>
-        <div class="article">
-            <a href="article1.html">
-                <img src="img/article.png" alt="Image 3">
-            </a>
+        </a>
+        <a href="article1.html" class="article">
+            <img src="img/article.png" class="article-image" alt="Image 3">
             <h3>Marie - Peintre</h3>
             <p>Décrire son activité et son expérience dans la sauvegarde du patrimoine.</p>
-        </div>
-
+        </a>
     </div>
     <a href="" class="more">Voir tous les témoignages</a>
 
@@ -147,64 +126,52 @@
                 <img src="img/marteau.png" alt="Marteau 2">
                 <img src="img/marteau.png" alt="Marteau 3">
             </div>
-            <br>
-            <a href="" class="button">En savoir plus</a>
+            <br><br>
+            <a href="#about-rating" class="button">En savoir plus</a>
         </div>
 
 
-        <div class="article">
-            <a href="article1.html">
-                <img src="img/article2.png" alt="Image 2">
-            </a>
+
+            <a href="article1.html" class="article">
+            <img src="img/article2.png" class="article-image" alt="Image 2">
             <div class="rating">
                 <img src="img/marteau.png" alt="Marteau 1">
                 <img src="img/marteau.png" alt="Marteau 2">
             </div>
             <h3>Toulouse</h3>
             <p>Ceci est une courte description de l'article 2. Insérer une courte description pour analyser les risques les plus importants auxquel le batiment est exposé...</p>
-        </div>
-        <div class="article">
-            <a href="article1.html">
-                <img src="img/article.png" alt="Image 3">
-            </a>
+        </a>
+
+        <a href="article1.html" class="article">
+            <img src="img/article.png" class="article-image" alt="Image 2">
             <div class="rating">
                 <img src="img/marteau.png" alt="Marteau 1">
             </div>
             <h3>Toulouse</h3>
-            <p>Ceci est une courte description de l'article 3. Insérer une courte description pour analyser les risques les plus importants auxquel le batiment est exposé...</p>
-        </div>
+            <p>Ceci est une courte description de l'article 2. Insérer une courte description pour analyser les risques les plus importants auxquel le batiment est exposé...</p>
+        </a>
 
-        <div class="article">
-            <img src="img/article.png" alt="Image 4">
+       <a href="article1.html" class="article">
+            <img src="img/article2.png" class="article-image" alt="Image 2">
             <div class="rating">
                 <img src="img/marteau.png" alt="Marteau 1">
                 <img src="img/marteau.png" alt="Marteau 2">
                 <img src="img/marteau.png" alt="Marteau 3">
             </div>
             <h3>Toulouse</h3>
-            <p>Ceci est une courte description de l'article 4. Insérer une courte description pour analyser les risques les plus importants auxquel le batiment est exposé...</p>
-        </div>
-        <!--
-        <div class="article">
-            <img src="img/article2.png" alt="Image 4">
-            <div class="rating">
-                <img src="img/marteau.png" alt="Marteau 1">
-            </div>
-            <h3>Toulouse</h3>
-            <p>Ceci est une courte description de l'article 4. Insérer une courte description pour analyser les risques les plus importants auxquel le batiment est exposé...</p>
-        </div>-->
-
+            <p>Ceci est une courte description de l'article 2. Insérer une courte description pour analyser les risques les plus importants auxquel le batiment est exposé...</p>
+        </a>
 
     </div>
-            <a href="" class="more">Voir tous les témoignages</a>
+            <a href="" class="more">Voir tous les diagnostics</a>
 
         </div>
     </div>
         </div>
 </section>
 
-        <section class="about-rating">
-            <div class="container22 content">
+        <section id="about-rating">
+            <div class="container content">
             <h2>Notons les mauvais élèves !</h2>
 
             
@@ -234,8 +201,8 @@
         </div>
         </section>
 
-    <section class="about-us">
- <div class="container22 content">
+    <section id="about-us">
+ <div class="container content">
     <h2>A propos de nous</h2>
     <div class="parent">
         <div class="enfant">
@@ -266,8 +233,8 @@
  </div>
 </section>
 
-<section class="contact-us">
- <div class="container22 content">
+<section id="contact-us">
+ <div class="container content">
     <h2>Contactez-nous !</h2>
     <p>Vous avez connaissance d'un batiment en déperdition, vous travaillez dans le domaine de la réhabilitation, ou vous souhaiteriez simplement nous contacter ?</p>
     <div class="parent">
