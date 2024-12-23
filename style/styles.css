@@ -11,17 +11,14 @@
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.article-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-    gap: 25px;
-    margin: 0 auto;
-}
+
 .last-study .article{
     min-width: 250px;
 }
 
-
+.last-study .article .article-image {
+    height: auto;
+}
 
 
 

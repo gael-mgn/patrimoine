@@ -275,9 +275,11 @@ section {
     }
 }
 
-.article img {
+.article .article-image {
     width: 100%;
-    height: auto;
+    height: 220px; /* Hauteur fixe (ajustable selon vos besoins)
+    remplace height auto */
+    object-fit: cover;
     display: block;
     margin-bottom: 10px;
     border-radius: 6px;
@@ -334,13 +336,13 @@ a {
     padding-bottom: 5px;
     text-align: center;
 }
-.enfant .more {
+.more {
     display: block;
     margin-top: 30px;
     text-align: center;
     font-size: 1.1em;
 }
-.enfant .more:hover {
+.more:hover {
     color: #680D1A;
 }
 
@@ -384,9 +386,23 @@ a {
 
 
 
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    gap: 25px;
+    margin: 0 auto;
+}
+.all-content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 0.25fr));
+}
 
-
-
+@media (max-width: 768px) {
+    .article-grid {
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    }
+    .all-content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+}}
 
 
 .rating
