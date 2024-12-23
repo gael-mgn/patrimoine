@@ -17,7 +17,9 @@
     gap: 25px;
     margin: 0 auto;
 }
-
+.last-study .article{
+    min-width: 250px;
+}
 
 
 
@@ -150,8 +152,20 @@
     color: var(--color, inherit);
 }
 
+.diagrams {
+    display: flex;
+    gap:25px;
+    justify-content: space-around;
+    text-align: center;
+}
 
 
+.general-rate {
+    color: #752D2C;
+}
+.climate-rate {
+    color: #2E4A45;
+}
 
 /*Badge*/
 
