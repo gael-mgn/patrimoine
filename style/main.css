@@ -91,6 +91,12 @@ header nav a::after, header nav a:hover::after {
     color: inherit;
 }
 
+@media (max-width: 768px) {
+    header nav a::after, header nav a:hover::after {
+    margin: 0 auto; /* Centre horizontalement le trait */
+}
+}
+
 header nav a::after
 {
     width: 0px;
@@ -201,7 +207,6 @@ header nav a::after
         top: 0;
         left: 0;
         transform: translateY(0);
-        background-color: red;
         height: 120vh;
         object-fit: cover;
     }

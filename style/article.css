@@ -1,24 +1,24 @@
-#contact-us {
-    border-top: 5px solid #294F4A;
-}
+
 input[type="email"],textarea, #contact-us {
-    background-color: #C6B099;
+    background-color: #C4B8AC;
     border: 2px solid #D8CCB3;
 }
 button {
-    border: 3px solid #C6B099;
+    border: 3px solid #C4B8AC;
 }
 label, button{
-    color: #C6B099;
+    color: #C4B8AC;
 }
 
 .banner {
-
     height: 300px;
-
 }
 
-article {
+#contact-us {
+    border-top: 5px solid #32605A;
+}
+
+article p {
     font-family: 'Lato', sans-serif;
 }
 
@@ -37,7 +37,14 @@ article {
     padding: 2rem;
     max-width: 800px;
     margin: auto;
+    margin-bottom: 30px;
 }
+@media (min-width: 1200px) {
+    article {
+        text-align: justify;  /* Justifie le texte uniquement sur les grands écrans */
+    }
+}
+
 
 article h2 {
     font-size: 36px;
@@ -85,7 +92,7 @@ article h2 {
 
 .article-content p {
     margin-bottom: 1rem;
-    font-size: 18px;
+    font-size: 1.3rem
 }
 .article-content a {
 font-size: 18px;
@@ -95,7 +102,7 @@ font-size: 18px;
 }
 
 .article-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
 }
@@ -141,3 +148,5 @@ width: 100vw;
     margin-bottom: 1rem;
 }
 }
+
+

@@ -161,10 +161,17 @@
       
       border-radius: 8px;
 
+/*
       padding: 15px;
-      border: 3px solid #D8CCB3;
+      border: 3px solid #D8CCB3;*/
     }
-
+    /*
+@media (max-width: 768px){
+    .badge {
+    padding:0;
+    border: none;
+}
+}*/
     .badge img {
       width: 90px;
       height: 90px;
