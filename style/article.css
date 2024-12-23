@@ -93,10 +93,15 @@ article h2 {
     line-height: 1.6;
 }
 
-.article-content p {
+.article-content p, .article-content .no-style {
     margin-bottom: 1rem;
     font-size: 1.3rem
 }
+
+.article-content .no-style{
+    margin-bottom: 50px;
+}
+
 .article-content a {
 font-size: 18px;
 }
@@ -108,6 +113,10 @@ font-size: 18px;
     font-size: 1.8rem;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
+}
+
+.article-content h4 {
+    font-size: 1.3rem;
 }
 
 .image-container {
