@@ -10,3 +10,8 @@
     font-size: 0.9em;
 }
 
+
+
+.circular-progress::before {
+    background: #C6B099;
+}

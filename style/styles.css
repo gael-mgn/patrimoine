@@ -1,6 +1,11 @@
-
-
-
+.parent1 {
+    background: #C5B79C;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em;
+    gap: 25px;
+}
 
 
 
@@ -75,3 +80,53 @@
 
 
 
+.parent0 {
+}
+.enfant0{
+    
+}
+.parent1 {
+    gap: 20px;
+}
+
+
+.parent1 .enfant {
+}
+/*B7AD9A*/
+.parent1 .enfant1 {
+    min-width: 200px;
+        overflow: hidden;
+    background-color: #B7AD9A;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+.parent1 .enfant1 .article-image {
+    height: auto;
+}
+.enfant2 .article-info {
+    padding-bottom :15px;
+}
+@media (max-width: 600px) {
+.enfant2 .article-info {
+    padding-bottom :20px;
+}
+
+.article2 {
+    min-width: 200px;
+        overflow: hidden;
+    background-color: #B7AD9A;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.circular-progress::before {
+    background: #B7AD9A;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
