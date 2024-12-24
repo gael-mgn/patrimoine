@@ -137,13 +137,30 @@ font-size: 18px;
     text-align: center;
 }
 
+/*
 .article-quote {
     font-style: italic;
-    /*color: #333;*/
     border-left: 4px solid #32605A;
     padding-left: 1rem;
     margin: 1rem 0;
-    /*background-color: #f1f1f1;*/
+}*/
+
+.article-quote {
+    font-style: italic;
+    border-left: 4px solid #32605A;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    position: relative;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.article-quote .author {
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 0.5rem;
+    color: #32605A;
 }
 
 
