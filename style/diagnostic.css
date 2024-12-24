@@ -1,7 +1,11 @@
 .result {
-    background-color: #C5B79C;
+    background-color: #C6B099;
 
 }
+.evaluation {
+    background-color: #C5B79C;
+}
+
 .result {
     font-size: 0.9em;
 }

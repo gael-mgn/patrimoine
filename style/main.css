@@ -262,13 +262,13 @@ section {
     filter: grayscale(100%);
 }
 
-.article p, .article h3 {
+.article-info {
     padding-left: 15px;
     padding-right: 15px;
 }
 
 @media (max-width: 768px) {
-    .article p, .article h3 {
+    .article-info {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 5px;
