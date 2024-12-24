@@ -42,8 +42,11 @@ article {
     margin-bottom: 30px;
 }
 @media (min-width: 1200px) {
-    article {
+    article p {
         text-align: justify;  /* Justifie le texte uniquement sur les grands écrans */
+    }
+    article .parent .enfant p {
+         text-align: left;
     }
 }
 
@@ -133,11 +136,11 @@ font-size: 18px;
 
 .article-quote {
     font-style: italic;
-    color: #333;
-    border-left: 4px solid rgb(0, 0, 145);
+    /*color: #333;*/
+    border-left: 4px solid #32605A;
     padding-left: 1rem;
     margin: 1rem 0;
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
 }
 
 
@@ -147,6 +150,9 @@ font-size: 18px;
     margin: 1rem 0;
     max-height: 100vh;
     object-fit: cover;
+}
+.max-image {
+    height: 400px;
 }
 
 
@@ -162,3 +168,28 @@ width: 100vw;
 }
 
 
+
+
+.image-container {
+  text-align: center; /* Centre l'image et la légende */
+}
+
+.image-container img {
+  max-width: 100%; /* Ajuste l'image à la taille du conteneur */
+  height: auto; /* Préserve les proportions */
+  display: block; /* Évite un espace blanc sous l'image */
+  margin: 0 auto; /* Centre l'image horizontalement */
+  border-radius: 12px;
+}
+
+.caption {
+  font-size: 14px; /* Taille du texte de la légende */
+  margin-top: 5px; /* Espace entre l'image et la légende */
+  font-style: italic; /* Texte en italique */
+}
+
+.enfant p {
+    top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}

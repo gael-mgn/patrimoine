@@ -41,59 +41,6 @@
 
 
 
-/* Diagrammes */
-
-.diagram-container {
-    display: flex;
-    gap:25px;
-    background-color: inherit;
-    justify-content: center;
-}
-
-.circular-progress {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    background: conic-gradient(var(--color, #4caf50) var(--progress, 0deg), var(--bgcolor, inherit) 0deg);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.circular-progress::before {
-    content: '';
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    background: #C5B79C;
-    border-radius: 50%;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.progress-value {
-    position: relative;
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--color, inherit);
-}
-
-.diagrams {
-    display: flex;
-    gap:25px;
-    justify-content: space-around;
-    text-align: center;
-}
-
-
-.general-rate {
-    color: #752D2C;
-}
-.climate-rate {
-    color: #2E4A45;
-}
-
 /*Badge*/
 
 .badge {
