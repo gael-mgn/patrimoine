@@ -4,21 +4,6 @@
 
 
 
-.last-study {
-    background: #C5B79C;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-
-.last-study .article{
-    min-width: 250px;
-}
-
-.last-study .article .article-image {
-    height: auto;
-}
 
 
 
