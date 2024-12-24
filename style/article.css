@@ -121,6 +121,9 @@ font-size: 18px;
 .article-content h4 {
     font-size: 1.3rem;
 }
+.article-content h5 {
+    font-size: 1.2rem;
+}
 
 .image-container {
     width: 100%;
