@@ -216,9 +216,15 @@ header nav a::after
 .mobile {
     display: none;
 }
+.computer {
+    display: flex;
+}
 @media (max-width: 768px) {
 .mobile {
     display: flex;
+}
+.computer {
+    display: none;
 }
 }
 
@@ -568,6 +574,7 @@ a {
     padding: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     font-size: 1.1em;
+    gap: 25px;
 }
 
 
