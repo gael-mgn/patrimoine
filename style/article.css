@@ -141,6 +141,7 @@ font-size: 18px;
 .image-container figcaption {
     font-size: 0.9em;
     margin-bottom: 1.5em;
+    margin-top: 5px;
     font-style: italic;
     text-align: center;
 }

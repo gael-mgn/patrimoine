@@ -130,3 +130,30 @@
 @media only screen and (min-width: 1200px) {
 
 }
+
+#about-us .parent {
+    gap:25px;
+}
+
+#about-us img {
+    height: auto;
+    max-height: 350px;
+}
+
+#about-us .action-article {
+    max-width: 410px;
+    color: #32605A;
+    background-color: #D8CCB3;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+#about-us .action-article {
+    margin-bottom: 10px;
+}
+}
+/*
+.carte {
+    max-width: 500px;
+}
+*/
