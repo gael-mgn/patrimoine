@@ -737,9 +737,7 @@ form {
         margin: auto;
     }
     .gael {
-        width: 94%;
-        margin: auto;
-        font-size: 0.8em;
+        display: none;
     }
 
 }
