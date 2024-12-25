@@ -137,11 +137,9 @@
 
 #about-us img {
     height: auto;
-    max-height: 350px;
 }
 
 #about-us .action-article {
-    max-width: 410px;
     color: #32605A;
     background-color: #D8CCB3;
     border-radius: 12px;
@@ -151,7 +149,20 @@
 #about-us .action-article {
     margin-bottom: 10px;
 }
+
+
+.carte {
+    color: #32605A;
+    border-radius: 12px;
+    background-color: #D8CCB3;
 }
+.carte h3, .carte p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+}
+
 /*
 .carte {
     max-width: 500px;
